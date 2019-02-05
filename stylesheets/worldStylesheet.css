@@ -1,0 +1,43 @@
+.world-loader {
+  grid-area: c;
+  width: 100%;
+  height: 100%;
+  background-color: #BEEB9F;
+  text-align: center;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  padding: auto;
+}
+
+#earth_1 {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.sun_1 {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  position: absolute;
+}
+
+.world-loader:hover > #earth_1 {
+  -webkit-animation: rotation 1s infinite linear;
+}
+
+.world-loader:hover > .sun_1 {
+  -webkit-animation: revolution 2s infinite linear;
+}
+
+@-webkit-keyframes revolution {
+  from {
+    -webkit-transform:
+    scale(1);
+  }
+  to {
+    -webkit-transform:
+    scale(0);
+  }
+}

@@ -1,0 +1,31 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "a b c"
+  "d e f"
+  ;
+}
+
+.moon-loader {
+  grid-area: d;
+  background-color: #79BD8F;
+}
+
+.hammer-loader {
+  grid-area: e;
+  background-color: #00A388;
+}
+
+.water-loader {
+  grid-area: f;
+  background-color: #554A88;
+}

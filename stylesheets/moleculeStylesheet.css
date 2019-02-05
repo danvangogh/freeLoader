@@ -1,0 +1,42 @@
+.molecule-loader {
+  grid-area: b;
+  background-color: #FFFF9D;
+  text-align: center;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  padding: auto;
+}
+
+#molecule_1 {
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  border-radius: 45%;
+}
+
+
+.molecule-loader:hover > #molecule_1 {
+  -webkit-animation: size-rotation 1s infinite linear;
+}
+
+@-webkit-keyframes size-rotation {
+  0% {
+    -webkit-transform:
+    rotate(0deg)
+    scale(1);
+    -webkit-box-shadow: 0 0 0 0 rgba(186, 95, 239, 0.4);
+  }
+  50% {
+    -webkit-transform:
+    rotate(180deg)
+    scale(2.5);
+    -webkit-box-shadow: 0 0 30px 40px rgba(186, 95, 239, 0);
+  }
+  100% {
+    -webkit-transform:
+    rotate(359deg)
+    scale(1);
+    -webkit-box-shadow: 0 0 0 0 rgba(186, 95, 239, 0);
+  }
+}
